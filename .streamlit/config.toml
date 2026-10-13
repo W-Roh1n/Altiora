@@ -1,0 +1,16 @@
+[theme]
+base = "light"
+primaryColor = "#285B85"
+backgroundColor = "#F3F6FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#172536"
+font = "sans serif"
+borderColor = "#DCE4ED"
+linkColor = "#285B85"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+fileWatcherType = "poll"
