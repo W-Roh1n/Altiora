@@ -1,16 +1,12 @@
-# Altiora
+# Altiora — Private Markets Intelligence
 
-Personal LBO model. I built it to practice a full leveraged-buyout calculation in Python, check it with automated tests, and show the result in a local interface. It is an independent educational project. It is not affiliated with Monster Beverage Corporation, it is not a product, and it is not for making or recording investment decisions.
+Live Demo: https://altiora.streamlit.app/
 
-The opening case is an educational LBO of Monster Beverage Corporation. It is not an announced or completed acquisition. Reported history comes from the Form 10-K for the fiscal year ended December 31, 2025, in USD thousands on the face statements and stored here in USD millions:
+A Python-based LBO modelling and financial analysis application focused on Monster Beverage Corporation (NASDAQ: MNST).
 
-https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm
+Altiora is an independent educational project I built to explore leveraged-buyout modelling, financial analysis, Python development and automated testing. It is not affiliated with Monster Beverage Corporation, is not an official company model, and is not intended for making or recording investment decisions.
 
-The income statement in that filing supplies net sales, cost of sales, gross profit, operating expenses, operating income, and net income for 2023, 2024, and 2025. Those lines reconcile: net sales minus cost of sales equals gross profit, and gross profit minus operating expenses equals operating income. EBITDA is not in the filing. The model derives 2025 EBITDA as operating income plus the cash-flow depreciation and amortization add-back, and labels it derived. Capex, cash, debt, and trade working capital are also taken from that filing where a line exists. Blank items stay blank.
-
-The cover page reports 978,270,734 common shares outstanding on February 13, 2026, and an aggregate market value of common equity held by non-affiliates of $56,505,471,480 using the Nasdaq close on June 30, 2025. That dollar figure excludes affiliates, so it is not total market capitalization. It is not enterprise value, and it is not a current price. No same-date share price, share count, cash, and debt were available together, so the app does not calculate a market enterprise value. The 15.0x entry and exit multiples are editable assumptions.
-
-Growth, acquisition debt, fees, and closing cash are also assumptions. Monster's historical cash is not on the closing balance sheet, and its lack of year-end debt does not mean the acquisition is unlevered. Gross IRR and MOIC are hypothetical results of the case, not actual investor returns. The filing register lists what was checked, what was derived, and what was left blank.
+The opening case is a hypothetical LBO of Monster Beverage Corporation. It is not an announced or completed acquisition. Historical financial data is drawn from the company's Form 10-K for the fiscal year ended December 31, 2025, while acquisition terms and projections are model assumptions.
 
 ## What it does
 
